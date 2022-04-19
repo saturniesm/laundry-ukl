@@ -62,7 +62,9 @@ app.post("/", async(req, res) => {
 
             for (let i = 0; i < data_detail.length; i++) {
                 data_detail[i].id = IDTransaksi;
+                // TODO variabel untuk ngimpan total, dan bahkan di tambahkan terus smaa total transaksi
             }
+            // TODO ngambil data dari total terus nanti diambil ke sini :D dan baru apply pajak s
             detail_transaksi
                 .bulkCreate(data_detail)
                 .then((result) => {
